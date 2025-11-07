@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: 'Poppins', ui-sans-serif, system-ui;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply rounded-3xl border border-white/20 bg-white/60 shadow-xl backdrop-blur dark:border-slate-700/60 dark:bg-slate-900/60;
+  }
+
+  .section-max {
+    @apply mx-auto w-full max-w-6xl px-4 lg:px-6;
+  }
+}
