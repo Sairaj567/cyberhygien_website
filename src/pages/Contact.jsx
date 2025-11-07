@@ -107,7 +107,7 @@ function Contact() {
           <div className="overflow-hidden rounded-3xl shadow-xl">
             <iframe
               title="A.C. Patil College of Engineering"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.270670645959!2d73.04998561534966!3d19.0331609871099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1c7d316f47b%3A0x719518d8b81d5215!2sA.%20C.%20Patil%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1699970586592!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2335.241358612534!2d73.061959!3d19.030898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c24052e100f3%3A0xb6e3e4259b43a898!2sA.%20C.%20Patil%20College%20of%20Engineering!5e1!3m2!1sen!2sin!4v1762519583363!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               width="100%"
               height="360"
               style={{ border: 0 }}
