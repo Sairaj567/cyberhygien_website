@@ -1,10 +1,17 @@
+import drVijayakumar from '../assets/drvnpawar.jpg';
+import drManjushaDeshmukh from '../assets/Dr.-Manjusha-Deshmukh-683x1024.jpg';
+import profVidhyadharKulkarni from '../assets/vidhyadhar kulkarni.jpeg';
+import drAsraSadaf from '../assets/asra_sadaf.jpg';
+import sairajNagargoje from '../assets/sairaj_nagargoje.jpg';
+import karunaPol from '../assets/karuna_pol.jpeg';
+
 const team = [
   {
     category: 'Faculty Coordinators',
     name: 'Dr. Vijayakumar Pawar',
     role: 'Principal, A. C. Patil College of Engineering',
     org: 'ACPCE',
-    photo: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=800&q=80',
+    photo: drVijayakumar,
     linkedin: 'https://www.linkedin.com/in/vnpawar/'
   },
   {
@@ -12,14 +19,14 @@ const team = [
     name: 'Dr. Manjusha Deshmukh',
     role: 'HoD, CSE (IoT & Cyber Security with Blockchain Technologies)',
     org: 'ACPCE',
-    photo: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80'
+    photo: drManjushaDeshmukh
   },
   {
     category: 'Faculty Coordinators',
     name: 'Prof. Vidhyadhar Kulkarni',
     role: 'Training & Placement Officer',
     org: 'ACPCE',
-    photo: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80',
+    photo: profVidhyadharKulkarni,
     linkedin: 'https://www.linkedin.com/in/vidyadhar-kulkarni-2b357019/'
   },
   {
@@ -35,19 +42,19 @@ const team = [
     name: 'Dr. Asra Sadaf',
     role: 'Faculty Coordinator, Cyber Hygiene MUN 2025',
     org: 'ACPCE',
-    photo: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80',
+    photo: drAsraSadaf,
     linkedin: 'https://www.linkedin.com/in/asra-sadaf-84406749/'
   },
   {
     category: 'Volunteer Heads',
     name: 'Sairaj Nagargoje',
-    photo: 'https://images.unsplash.com/photo-1544723795-432537f83d01?auto=format&fit=crop&w=800&q=80',
+    photo: sairajNagargoje,
     linkedin: 'https://www.linkedin.com/in/sairaj-nagargoje/'
   },
   {
     category: 'Volunteer Heads',
     name: 'Karuna Pol',
-    photo: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80',
+    photo: karunaPol,
     linkedin: 'https://www.linkedin.com/in/karuna-v-p-31a27a274/'
   },
   {
