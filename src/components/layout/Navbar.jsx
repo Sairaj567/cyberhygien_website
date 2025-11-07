@@ -9,9 +9,11 @@ const links = [
   { label: 'About', to: '/about' },
   { label: 'Committees', to: '/committees' },
   { label: 'Themes', to: '/themes' },
+  { label: 'Awards', to: '/awards' },
   { label: 'Agenda', to: '/agenda' },
   { label: 'Team', to: '/team' },
   { label: 'Registration', to: '/registration' },
+  { label: 'Resources', to: '/resources' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Contact', to: '/contact' }
 ];

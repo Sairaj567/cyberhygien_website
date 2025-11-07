@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Globe, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import cdacLogo from '../../assets/cdac-logo.png';
 import acpceLogo from '../../assets/acpce-logo.png';
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://www.facebook.com/cdacmumbai', label: 'Facebook' },
-  { icon: Instagram, href: 'https://www.instagram.com/cdacmumbai', label: 'Instagram' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/company/c-dac', label: 'LinkedIn' }
+  { icon: Globe, href: 'https://acpce.ac.in/', label: 'ACPCE Website' },
+  { icon: Instagram, href: 'https://www.instagram.com/acpceofficial/?hl=en', label: 'ACPCE Instagram' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/school/jawahar-education-societys-a.c.patil-college-of-engineering-17-sector-4-kharghar-navi-mumbai-410-210/', label: 'ACPCE LinkedIn' }
 ];
 
 function Footer() {

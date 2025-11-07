@@ -27,7 +27,7 @@ function Agenda() {
           Detailed timings and committee-specific breakout rooms will be shared with registered delegates via email. Download the official briefing document for preparation guidelines, position paper templates, and crisis simulation protocols.
         </p>
         <a
-          href="https://drive.google.com"
+          href="https://drive.google.com/file/d/1DJQMnMxz_yEdAqkGDpya7iFVD4CdBnld/view?usp=drive_link"
           target="_blank"
           rel="noreferrer"
           className="mt-4 inline-flex text-sm font-semibold text-secondary transition hover:text-secondary/80"

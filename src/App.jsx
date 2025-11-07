@@ -6,10 +6,12 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Committees from './pages/Committees.jsx';
 import Themes from './pages/Themes.jsx';
+import Awards from './pages/Awards.jsx';
 import Agenda from './pages/Agenda.jsx';
 import Registration from './pages/Registration.jsx';
 import Team from './pages/Team.jsx';
 import Gallery from './pages/Gallery.jsx';
+import Resources from './pages/Resources.jsx';
 import Contact from './pages/Contact.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Privacy from './pages/Privacy.jsx';
@@ -25,7 +27,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/committees" element={<Committees />} />
           <Route path="/themes" element={<Themes />} />
+          <Route path="/awards" element={<Awards />} />
           <Route path="/agenda" element={<Agenda />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/team" element={<Team />} />
           <Route path="/gallery" element={<Gallery />} />

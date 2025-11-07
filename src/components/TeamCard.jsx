@@ -20,8 +20,8 @@ function TeamCard({ member, index }) {
       </div>
       <div className="flex flex-1 flex-col gap-2 p-6 text-slate-700 dark:text-slate-300">
         <span className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary/90">{member.category}</span>
-        <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{member.name}</h3>
-        <p className="text-sm">{member.role}</p>
+  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{member.name}</h3>
+  {member.role ? <p className="text-sm">{member.role}</p> : null}
         {member.org && (
           <p className="text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">{member.org}</p>
         )}

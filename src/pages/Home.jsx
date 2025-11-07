@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Users2, Award } from 'lucide-react';
 import Hero from '../components/Hero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import awards from '../data/awards.js';
 import themes from '../data/themes.js';
 
 const highlights = [
@@ -22,6 +23,8 @@ const highlights = [
     icon: Award
   }
 ];
+
+const spotlightAwards = awards.filter((award) => award.spotlight).slice(0, 3);
 
 function Home() {
   return (
@@ -52,6 +55,60 @@ function Home() {
               <p className="text-sm text-slate-600 dark:text-slate-300">{highlight.description}</p>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden py-24">
+        <div
+          className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary/10 via-white to-primary/5 dark:from-secondary/20 dark:via-slate-950 dark:to-primary/15"
+          aria-hidden="true"
+        />
+        <div className="section-max space-y-12">
+          <SectionHeading
+            eyebrow="Awards"
+            title="Celebrating diplomacy, research, and storytelling"
+            description="A 25-category recognition framework honours persuasive delegates, insightful jurors, and schools championing cyber hygiene beyond committee halls."
+            alignment="left"
+          />
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {spotlightAwards.map((awardItem, index) => {
+              const Icon = awardItem.icon;
+              return (
+                <motion.article
+                  key={awardItem.title}
+                  className="glass-card flex h-full flex-col gap-5 p-8"
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                >
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary/15 text-secondary">
+                    <Icon size={22} />
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{awardItem.title}</h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-300">{awardItem.description}</p>
+                  </div>
+                  <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                    {awardItem.criteria.map((criterion) => (
+                      <li key={criterion} className="flex items-start gap-2">
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-secondary" aria-hidden="true" />
+                        <span>{criterion}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.article>
+              );
+            })}
+          </div>
+          <div className="flex justify-end">
+            <Link
+              to="/awards"
+              className="inline-flex items-center text-sm font-semibold text-secondary transition hover:text-secondary/80"
+            >
+              Explore detailed awards →
+            </Link>
+          </div>
         </div>
       </section>
 
